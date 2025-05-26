@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "lefthook install",
-    "cz": "cz",
     "commit": "cz"
   },
   "private": true,
