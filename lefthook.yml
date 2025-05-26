@@ -1,0 +1,27 @@
+# lefthook.yml
+
+# Group to ensure script permissions
+ensure-script-permissions:
+  parallel: true # Commands in this group can run in parallel if desired
+  commands:
+    project-scripts:
+      run: bash ./tools/chmodx.sh ./scripts sh --recursive
+    tool-scripts:
+      # Makes .sh files directly in ./tools executable (non-recursive by default)
+      run: bash ./tools/chmodx.sh ./tools sh
+
+commit-msg:
+  commands:
+    'lint commit message':
+      # Validate commit message with commitlint
+      run: pnpm exec commitlint --edit {1} --verbose
+
+post-checkout:
+  commands:
+    update-script-permissions:
+      run: lefthook run ensure-script-permissions
+
+post-merge:
+  commands:
+    update-script-permissions:
+      run: lefthook run ensure-script-permissions

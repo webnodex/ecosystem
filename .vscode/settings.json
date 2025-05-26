@@ -92,5 +92,6 @@
   },
 
   "github.branchProtection": true,
-  "github.showAvatar": true
+  "github.showAvatar": true,
+  "nxConsole.generateAiAgentRules": true
 }

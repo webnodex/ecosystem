@@ -2,11 +2,12 @@
   "name": "@webnodex/source",
   "version": "0.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "postinstall": "lefthook install",
-    "commit": "cz"
+    "commit": "cz",
+    "chmodx": "bash ./tools/chmodx.sh"
   },
-  "private": true,
   "nx": {},
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
