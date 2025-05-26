@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
-    "commit": "cz",
-    "commitlint": "commitlint --edit"
+    "commit": "cz"
   },
   "private": true,
   "devDependencies": {
