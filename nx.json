@@ -37,6 +37,14 @@
       "e2eTestRunner": "none",
       "publishable": false,
       "useProjectJson": false
+    },
+    "@nx/js:library": {
+      "bundler": "swc",
+      "linter": "eslint",
+      "publishable": false,
+      "unitTestRunner": "vitest",
+      "strict": true,
+      "testEnvironment": "node"
     }
   }
 }

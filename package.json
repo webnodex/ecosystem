@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "lefthook install",
-    "commit": "cz"
+    "commit": "git commit"
   },
   "private": true,
   "devDependencies": {
