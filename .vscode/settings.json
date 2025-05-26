@@ -89,5 +89,8 @@
     "pnpm-lock.yaml": true,
     "yarn.lock": true,
     "package-lock.json": true
-  }
+  },
+
+  "github.branchProtection": true,
+  "github.showAvatar": true
 }

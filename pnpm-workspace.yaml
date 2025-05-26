@@ -1,11 +1,2 @@
-packages:
-  - apps/*
-  - devkits/*
-  - docs/*
-  - libs/*
-  - sdk/*
-  - toolkits/*
-  - tools/*
-
 onlyBuiltDependencies:
   - lefthook

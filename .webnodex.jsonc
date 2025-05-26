@@ -1,0 +1,11 @@
+{
+  "domains": {
+    "app": "*",
+    "devkit": "*",
+    "docs": "*",
+    "libs": "*",
+    "sdk": "*",
+    "toolkits": "*",
+    "tools": "*"
+  }
+}
