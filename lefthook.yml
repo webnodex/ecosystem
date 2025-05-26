@@ -1,0 +1,16 @@
+# lefthook.yml
+
+# Build commit messages
+prepare-commit-msg:
+  commands:
+    commitzen:
+      interactive: true
+      run: pnpm exec cz --hook
+      env:
+        LEFTHOOK: 0
+
+# Validate commit messages
+commit-msg:
+  commands:
+    'lint commit message':
+      run: pnpm exec commitlint --edit {1} --verbose
